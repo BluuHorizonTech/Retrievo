@@ -170,6 +170,8 @@ Query Embedding
 ---
 
 ## Retrieval
+![alt text](image-1.png)
+
 
 Retrievo uses multiple retrieval stages.
 
