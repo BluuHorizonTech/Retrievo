@@ -649,6 +649,31 @@ SYSTEM
   cost_usd_per_query         $...
 ```
 
+#### Optimization
+Optimized few metrics values like MRR and NDCG@k
+```
+==============================================================
+RAG EVALUATION  —  3 items  —  model=mistral  top_k=5
+==============================================================
+
+RETRIEVAL
+  recall@5           1.000
+  precision@5        0.200
+  hit@5              1.000
+  mrr                0.833
+  ndcg@5             0.877
+
+GENERATION
+  faithfulness       1.000
+  relevance          1.000
+  correctness        1.000
+```
+
+#### How I achieved this?
+- Now using BAAI/bge-reranker-v2-m3
+- Decreased RRF K from 60 to 20
+- Increased candidate size to 50
+
 ---
 
 # Project Structure

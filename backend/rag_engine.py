@@ -84,8 +84,8 @@ FAISS_TMP  = "faiss.index.tmp"
 CHUNK_SIZE       = 300
 CHUNK_OVERLAP    = 60
 EMBED_BATCH_SIZE = 32
-RERANK_MODEL     = "BAAI/bge-reranker-base"
-RRF_K            = 60
+RERANK_MODEL     = "BAAI/bge-reranker-v2-m3"
+RRF_K            = 20
 
 TOKEN_RE = re.compile(r"[a-z0-9]+")
 
@@ -344,7 +344,7 @@ class RAGEngine:
     # ------------------------------------------------------------------
     # READ PATH
     # ------------------------------------------------------------------
-    def retrieve(self, query: str, top_k: int = 4, candidates: int = 20) -> List[Dict]:
+    def retrieve(self, query: str, top_k: int = 4, candidates: int = 50) -> List[Dict]:
         # 1) semantic
         qv = np.asarray(self._embed_batch([query]), dtype="float32")
         faiss.normalize_L2(qv)
