@@ -1,0 +1,122 @@
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# ==============================
+# Environment / Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# IDE / Editors
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# Retrievo Runtime Data
+# ==============================
+
+# Uploaded documents
+uploads/
+
+# SQLite database
+*.db
+*.sqlite
+*.sqlite3
+
+# FAISS indexes
+*.faiss
+*.index
+
+# Temporary / generated index files
+*.tmp
+*.bak
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+
+# ==============================
+# Evaluation Outputs
+# ==============================
+eval_data/runs/
+
+# Evaluation cache / temporary files
+eval_data/cache/
+eval_data/tmp/
+
+# ==============================
+# Python Build
+# ==============================
+build/
+dist/
+*.egg-info/
+
+# ==============================
+# Testing / Coverage
+# ==============================
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# ==============================
+# Jupyter
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Local AI / Model Files
+# ==============================
+
+# Ollama / downloaded model files
+models/
+
+# Local embedding / reranker caches
+.cache/
+cache/
+
+# ==============================
+# Temporary Files
+# ==============================
+tmp/
+temp/
+*.temp
+
+# ==============================
+# Generated Files
+# ==============================
+generated/
+output/
+
+backend/eval_data/
+rag.db*
+faiss_index*
+chunks*
+concept.md
+evaluation.md
+image.png
